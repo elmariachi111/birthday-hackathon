@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Amatic";
+    font-weight: 600;
+    src: url("../fonts/Amatic/AmaticSC-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Amatic";
+    font-weight: 300;
+    src: url("../fonts/Amatic/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Glacial";
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/Glacial/GlacialIndifference-Italic.otf");
+}
+
+@font-face {
+    font-family: "Glacial";
+    font-weight: normal;
+    src: url("../fonts/Glacial/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+    font-family: "Glacial";
+    font-weight: bold;
+    src: url("../fonts/Glacial/GlacialIndifference-Bold.otf");
+}
