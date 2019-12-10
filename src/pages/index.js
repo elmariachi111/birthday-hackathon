@@ -11,6 +11,7 @@ import location from "../images/artwork/location.jpg"
 import bchack from "../images/artwork/bchack.jpg"
 
 import CountMeIn from '../components/site/CountMeIn'
+import Partners from '../components/site/Partners'
 
 const IndexPage = () => {
   const _images = useStaticQuery(graphql`
@@ -146,7 +147,7 @@ const IndexPage = () => {
     <Box background="white" align="center">
       <Heading level={2} size="xlarge">
         Partners
-    </Heading>
+      </Heading>
 
       <Partners />
     </Box>

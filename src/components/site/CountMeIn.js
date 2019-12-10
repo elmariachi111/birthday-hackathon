@@ -1,8 +1,31 @@
 import React, { useState } from 'react'
 import { Box, Form, FormField, Heading, Button, Paragraph, ResponsiveContext } from 'grommet'
 import { Like } from "grommet-icons"
+import styled from 'styled-components'
+import _map from "lodash.map"
 
 import emailValidator from 'email-validator'
+const NETLIFY_FORM_NAME = `birthdayhack-submissions`
+const HiddenField = styled.div`
+  display: none;
+  height: 0;
+`
+
+async function postSubmission(formName, submission) {
+    const encoded = _map(
+        {
+            "form-name": formName,
+            ...submission,
+        },
+        (val, key) => encodeURIComponent(key) + `=` + encodeURIComponent(val)
+    ).join(`&`)
+
+    return fetch(`/`, {
+        method: `POST`,
+        headers: { "Content-Type": `application/x-www-form-urlencoded` },
+        body: encoded,
+    })
+}
 
 export default (props) => {
     const [submitted, setSubmitted] = useState({})
@@ -10,9 +33,16 @@ export default (props) => {
     const validate = (val) => {
         return emailValidator.validate(val) ? null : "that's not an email address :("
     }
-    const doSubmit = ({ value }) => {
-        console.log(value)
-        setSubmitted(value)
+    const doSubmit = async ({ value }) => {
+        try {
+            const response = await postSubmission(NETLIFY_FORM_NAME, value)
+            console.log(response)
+            setSubmitted(value)
+        } catch (e) {
+            setSubmitted({})
+            console.error(e)
+        }
+
     }
 
     const size = React.useContext(ResponsiveContext);
@@ -41,7 +71,26 @@ export default (props) => {
                 <Heading level={2} size="xlarge" >
                     Okay, count me in!
                 </Heading>
-                <Form onSubmit={doSubmit}>
+                <Form name={NETLIFY_FORM_NAME}
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="important-note-field"
+                    onSubmit={doSubmit}>
+                    <HiddenField>
+                        <label>
+                            Another field for you to fill:{` `}
+                            <input
+                                aria-label="dont fill this field if youre not a machine"
+                                name="important-note-field"
+                            />
+                        </label>
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            aria-label="a technical field thats filled automatically"
+                            value={NETLIFY_FORM_NAME}
+                        />
+                    </HiddenField>
                     <FormField name="name" label="your name" required />
                     <FormField name="twitter" label="github || twitter handle" />
                     <FormField name="email" validate={validate} label="email address" />
