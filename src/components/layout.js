@@ -36,10 +36,10 @@ const Layout = ({ children }) => {
           </Box>
         </Box>
         <Box direction="row" gap="large">
-          <Box>Schedule</Box>
+          {/*<Box>Schedule</Box>
           <Box>Topics</Box>
           <Box>Location</Box>
-
+        */}
         </Box>
       </Header>
 

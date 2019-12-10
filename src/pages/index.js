@@ -1,31 +1,50 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery } from "gatsby"
 import { Anchor, Box, Heading, Image, Paragraph, Stack, List, Text } from 'grommet'
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 
 import SEO from "../components/seo"
 
-import mops from "../images/mops.png"
-import location from "../images/location.jpg"
-import bchack from "../images/bchack.jpg"
+import mops from "../images/artwork/mops.png"
+import location from "../images/artwork/location.jpg"
+import bchack from "../images/artwork/bchack.jpg"
+
+import CountMeIn from '../components/site/CountMeIn'
+
+const IndexPage = () => {
+  const _images = useStaticQuery(graphql`
+  
+  query {
+    allFile(filter: {relativePath: {regex: "/artwork/"}}) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          
+        }
+      }
+    }
+  }
+`)
+  let images = {}
+  _images.allFile.edges.forEach(({ node }) => { images[node.name] = node.childImageSharp })
 
 
-import audibene from "../images/audibene-logo.svg"
-import twilio from "../images/twilio.png"
-import turbinekreuzberg from "../images/logo_txb_black.png"
-import coachhub from "../images/coachhub.svg"
-import codingberlin from "../images/coding-berlin.png"
-
-const IndexPage = () => (
-  <Layout>
+  return <Layout>
     <SEO title="Birthday Hackathon" />
 
-    <Box align="center" fill="vertical">
+    <Box align="center" fill="vertical" >
       <Box direction="row-responsive" align="center" >
-        <Box basis="1/2" align="center" >
+        <Box basis="1/2" align="center" animation="slideRight">
           <img src={mops} width="60%" />
         </Box>
-        <Box basis="1/2" direction="column" align="center">
+        <Box basis="1/2" direction="column" align="center" animation="slideLeft">
           <Heading level={3} size="xlarge" margin="none">January, 11th</Heading>
           <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
           <Paragraph >
@@ -37,12 +56,12 @@ const IndexPage = () => (
     </Box>
 
     <Box background="pale" >
-      <Heading level={2} size="xlarge" alignSelf="center">
+      <Heading level={2} size="xlarge" alignSelf="center" >
         A cozy Saturday to hack away
       </Heading>
 
       <Box direction="row-responsive" gap="large">
-        <Box pad={{ horizontal: "medium" }} basis="1/2" >
+        <Box pad={{ horizontal: "medium" }} basis="1/2" animation="slideRight">
 
           <Heading>What to expect</Heading>
           <Paragraph alignSelf="center" size="large">
@@ -54,30 +73,30 @@ const IndexPage = () => (
 
           </Paragraph>
           <Heading>There will be</Heading>
-          <Paragraph alignSelf="center" size="large">
-            <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
-              <li>
-                Unlimited Coffee Supplies
+
+          <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
+            <li>
+              Unlimited Coffee Supplies
               </li>
-              <li>
-                A healthy breakfast
+            <li>
+              A healthy breakfast
               </li>
-              <li>
-                Two lunch options
+            <li>
+              Two lunch options
               </li>
-              <li>
-                Afternoon Cake
+            <li>
+              Afternoon Cake
               </li>
-              <li>
-                A very German dinner choice (Stulle)
+            <li>
+              A very German dinner choice (Stulle)
               </li>
-              <li>
-                A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
+            <li>
+              A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
               </li>
-            </ul>
-          </Paragraph>
+          </ul>
+
         </Box>
-        <Box basis="1/2" >
+        <Box basis="1/2" animation="slideLeft">
           <Image fit="cover" src={location} />
         </Box>
       </Box>
@@ -120,41 +139,19 @@ const IndexPage = () => (
       </Box>
     </Box>
 
-    <Box background="pale">
-      <Heading level={2} size="xlarge" alignSelf="center">
-        Okay, count me in!
-      </Heading>
-
-      <Box direction="row-responsive" gap="large">
-
-      </Box>
+    <Box background="pale" align="center" pad="large">
+      <CountMeIn />
     </Box>
 
     <Box background="white" align="center">
       <Heading level={2} size="xlarge">
         Partners
-        </Heading>
+    </Heading>
 
-      <Box direction="row-responsive" wrap={true}>
-        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
-          <Image fill fit="contain" src={twilio} />
-        </Box>
-        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
-          <Image fill fit="contain" src={audibene} />
-        </Box>
-        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
-          <Image fill fit="contain" src={turbinekreuzberg} />
-        </Box>
-        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
-          <Image fill fit="contain" src={coachhub} />
-        </Box>
-        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
-          <Image fill fit="contain" src={codingberlin} />
-        </Box>
-      </Box>
+      <Partners />
     </Box>
 
   </Layout >
-)
+}
 
 export default IndexPage
