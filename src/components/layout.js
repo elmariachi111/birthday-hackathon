@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <Grommet theme={theme} full themeMode="dark" >
-      <Header background="dark-1" pad="small" gap="large">
+      <Header background="dark-1" pad="small">
         <Box direction="row" gap="small">
           <Icons.Gremlin color="pale" />
           <Box>
@@ -49,9 +49,7 @@ const Layout = ({ children }) => {
 
       <Footer pad="small" background="dark-2">
         <Text>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <Anchor href="https://www.gatsbyjs.org" label="Gatsby" />
+          Get in touch with the or
         </Text>
       </Footer>
 
