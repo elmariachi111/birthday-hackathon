@@ -12,7 +12,7 @@ import bchack from "../images/bchack.jpg"
 
 import audibene from "../images/audibene-logo.svg"
 import twilio from "../images/twilio.png"
-import turbinekreuzberg from "../images/logo_txb_white.png"
+import turbinekreuzberg from "../images/logo_txb_black.png"
 import coachhub from "../images/coachhub.svg"
 import codingberlin from "../images/coding-berlin.png"
 
@@ -22,28 +22,26 @@ const IndexPage = () => (
 
     <Box align="center" fill="vertical">
       <Box direction="row-responsive" align="center" >
-        <Box width="1/3" align="center">
+        <Box basis="1/2" align="center" >
           <img src={mops} width="60%" />
         </Box>
-        <Box direction="column" align="center">
-          <Heading level={3} margin="none">January, 11th</Heading>
-          <Heading level={1} color="pale" size="xlarge" margin={{ top: "none" }} textAlign="center">Birthday Hackathon</Heading>
+        <Box basis="1/2" direction="column" align="center">
+          <Heading level={3} size="xlarge" margin="none">January, 11th</Heading>
+          <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
           <Paragraph >
-            <Text weight="bold">Hack for fun</Text>
+            <Text weight="bold" size="large">Hack for fun!</Text>
           </Paragraph>
-          <Paragraph>
-            <Text>9am - 10pm</Text>
-          </Paragraph>
+
         </Box>
       </Box>
     </Box>
 
-    <Box background="pale" align="center">
-      <Heading level={2} size="xlarge">
+    <Box background="pale" >
+      <Heading level={2} size="xlarge" alignSelf="center">
         A cozy Saturday to hack away
-          </Heading>
-      <Box direction="row-responsive" gap="large"  >
+      </Heading>
 
+      <Box direction="row-responsive" gap="large">
         <Box pad={{ horizontal: "medium" }} basis="1/2" >
 
           <Heading>What to expect</Heading>
@@ -79,61 +77,84 @@ const IndexPage = () => (
             </ul>
           </Paragraph>
         </Box>
-        <Box height="large" >
+        <Box basis="1/2" >
           <Image fit="cover" src={location} />
         </Box>
       </Box>
     </Box>
 
-
     <Box background="dark-1" align="center">
-
-      <Box direction="row-responsive" gap="large">
-        <Box basis="full" height="large">
+      <Box direction="row-responsive" gap="large" >
+        <Box basis="1/2" height="large">
           <Image fit="cover" src={bchack} />
         </Box>
-        <Box pad={{ horizontal: "medium" }} fill>
-
+        <Box basis="1/2" pad={{ horizontal: "medium" }}>
           <Heading level={2} size="xlarge">
             What to build
           </Heading>
 
-          <Paragraph alignSelf="center" size="large">
-            Conversational interfaces
-            What's your take on <em>"how to interact with an application"</em>?
+          <Text size="large" weight="bold">Conversational interfaces</Text>
+          <Paragraph size="large" fill>
+            What's your interpretation on <em>"how to users interact with applications"</em>?
+            Go wild on voice, text, speech, chat and bot. In any direction.
           </Paragraph>
 
-          <Heading level={2} size="xlarge">
-            Partners
-          </Heading>
+          <Text size="large" weight="bold">Frontends to bow down for</Text>
+          <Paragraph size="large" fill>
+            What's the coolest effect that you can build with the latest frontend tools? Impress us with zooms, scales,
+            visualizations, graphs and usability tweaks.
+          </Paragraph>
 
-          <Box direction="row-responsive" gap="small">
-            <Box basis="1/3">
-              <Image fill fit="contain" src={twilio} />
-            </Box>
-            <Box basis="1/3">
-              <Image fill fit="contain" src={audibene} />
-            </Box>
-            <Box basis="1/3">
-              <Image fill fit="contain" src={turbinekreuzberg} />
-            </Box>
-            <Box basis="1/3">
-              <Image fill fit="contain" src={coachhub} />
-            </Box>
-            <Box basis="1/3">
-              <Image fill fit="contain" src={codingberlin} />
-            </Box>
-          </Box>
+          <Text size="large" weight="bold">Engage, Mr Data!</Text>
+          <Paragraph size="large" fill>
+            When you've got all the data and APIs of the world at hand, what can you figure out
+              that nobody has figured out before?
+          </Paragraph>
+
+          <Text size="large" weight="bold">Map me, baby!</Text>
+          <Paragraph size="large" fill>
+            Go crazy on map styles and location services and visualize something really meaningful
+          </Paragraph>
+
         </Box>
       </Box>
+    </Box>
 
+    <Box background="pale">
+      <Heading level={2} size="xlarge" alignSelf="center">
+        Okay, count me in!
+      </Heading>
+
+      <Box direction="row-responsive" gap="large">
+
+      </Box>
+    </Box>
+
+    <Box background="white" align="center">
+      <Heading level={2} size="xlarge">
+        Partners
+        </Heading>
+
+      <Box direction="row-responsive" wrap={true}>
+        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+          <Image fill fit="contain" src={twilio} />
+        </Box>
+        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+          <Image fill fit="contain" src={audibene} />
+        </Box>
+        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+          <Image fill fit="contain" src={turbinekreuzberg} />
+        </Box>
+        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+          <Image fill fit="contain" src={coachhub} />
+        </Box>
+        <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+          <Image fill fit="contain" src={codingberlin} />
+        </Box>
+      </Box>
     </Box>
 
   </Layout >
 )
 
 export default IndexPage
-
-/*
-
-            */

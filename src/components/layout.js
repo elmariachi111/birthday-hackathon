@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
     <Grommet theme={theme} full themeMode="dark" >
       <Header background="dark-1" pad="small">
         <Box direction="row" gap="small">
-          <Icons.Gremlin color="pale" />
+          <Icons.Gift color="pale" />
           <Box>
             <Text style={{ fontFamily: "Amatic", fontWeight: "bold", fontSize: "2em" }}>{data.site.siteMetadata.title}</Text>
           </Box>
@@ -43,16 +43,22 @@ const Layout = ({ children }) => {
         </Box>
       </Header>
 
-      <Main>
+      <Main >
         {children}
       </Main>
 
-      <Footer pad="small" background="dark-2">
-        <Text>
-          Get in touch with the or
+      <Footer
+        background="dark-2"
+        pad={{ horizontal: "large", vertical: "small" }}
+      >
+        <Box direction="row" gap="small">
+          <Icons.Gift color="brand" />
+          <Text alignSelf="center">birthday hackathon</Text>
+        </Box>
+        <Text textAlign="center" size="small">
+          © 2019 Copyright
         </Text>
       </Footer>
-
     </Grommet >
   )
 }
