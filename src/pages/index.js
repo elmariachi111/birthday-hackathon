@@ -158,6 +158,22 @@ const IndexPage = () => {
       <CountMeIn />
     </Box>
 
+    <Box background="dark-1" align="center" direction="column" style={{ display: "none" }} >
+      <Heading level={2} size="xlarge">
+        The Venue
+      </Heading>
+
+      <Box direction="row-responsive" fill>
+        <Box basis="1/2" height="large" elevation="xlarge">
+
+        </Box>
+        <Box basis="1/2" elevation="xlarge">
+
+
+        </Box>
+      </Box>
+    </Box>
+
     <Box background="white" align="center">
       <Heading level={2} size="xlarge">
         Partners
