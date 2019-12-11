@@ -48,7 +48,6 @@ export default (props) => {
     const size = React.useContext(ResponsiveContext);
 
     return <Box width="large" align="center">
-
         {submitted.name
             ?
             <Box direction="column"
@@ -67,8 +66,8 @@ export default (props) => {
             </Box>
 
             :
-            <div>
-                <Heading level={2} size="xlarge" >
+            <Box fill>
+                <Heading level={2} size="xlarge" alignSelf="center" >
                     Okay, count me in!
                 </Heading>
                 <Form name={NETLIFY_FORM_NAME}
@@ -96,7 +95,7 @@ export default (props) => {
                     <FormField name="email" validate={validate} label="email address" />
                     <Button type="submit" primary label="Submit" />
                 </Form>
-            </div>
+            </Box>
         }
     </Box>
 }

@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Box } from 'grommet';
 
-const Header = ({ ...rest }) => (
-    <Box
+
+const Header = ({ ...rest }) => {
+
+    return <Box
         align="center"
         as="header"
         direction="row"
@@ -12,7 +14,7 @@ const Header = ({ ...rest }) => (
         gap="medium"
         {...rest}
     />
-);
+};
 
 
 export { Header }

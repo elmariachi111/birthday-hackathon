@@ -1,8 +1,10 @@
 import React from "react"
 import { useStaticQuery } from "gatsby"
-import { Anchor, Box, Heading, Image, Paragraph, Stack, List, Text } from 'grommet'
+import { Anchor, Box, Heading, Image, Paragraph, Text } from 'grommet'
+//import { Coffee, Cafeteria } from 'grommet-icons'
+
 import Layout from "../components/layout"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 
 import SEO from "../components/seo"
 
@@ -12,6 +14,7 @@ import bchack from "../images/artwork/bchack.jpg"
 
 import CountMeIn from '../components/site/CountMeIn'
 import Partners from '../components/site/Partners'
+import Stars from '../components/site/Stars'
 
 const IndexPage = () => {
   const _images = useStaticQuery(graphql`
@@ -37,32 +40,36 @@ const IndexPage = () => {
   _images.allFile.edges.forEach(({ node }) => { images[node.name] = node.childImageSharp })
 
 
+
   return <Layout>
     <SEO title="Birthday Hackathon" />
 
     <Box align="center" fill="vertical" >
+
       <Box direction="row-responsive" align="center" >
+
         <Box basis="1/2" align="center" animation="slideRight">
           <img src={mops} width="60%" />
         </Box>
-        <Box basis="1/2" direction="column" align="center" animation="slideLeft">
+
+        <Box basis="1/2" direction="column" align="center" animation="slideLeft" style={{ position: 'relative' }}>
+          <Stars />
           <Heading level={3} size="xlarge" margin="none">January, 11th</Heading>
           <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
           <Paragraph >
             <Text weight="bold" size="large">Hack for fun!</Text>
           </Paragraph>
-
         </Box>
       </Box>
     </Box>
 
-    <Box background="pale" >
+    <Box background="pale"  >
       <Heading level={2} size="xlarge" alignSelf="center" >
         A cozy Saturday to hack away
       </Heading>
 
       <Box direction="row-responsive" gap="large">
-        <Box pad={{ horizontal: "medium" }} basis="1/2" animation="slideRight">
+        <Box pad={{ horizontal: "medium" }} basis="1/2" animation="slideRight" id="expect">
 
           <Heading>What to expect</Heading>
           <Paragraph alignSelf="center" size="large">
@@ -75,26 +82,28 @@ const IndexPage = () => {
           </Paragraph>
           <Heading>There will be</Heading>
 
-          <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
-            <li>
-              Unlimited Coffee Supplies
+          <Paragraph alignSelf="center" size="large">
+            <ul style={{ listStyleType: "square", margin: 0, padding: 0 }}>
+              <li>
+                unlimited coffee supplies
               </li>
-            <li>
-              A healthy breakfast
+              <li>
+                A healthy breakfast
               </li>
-            <li>
-              Two lunch options
+              <li>
+                Two lunch options
               </li>
-            <li>
-              Afternoon Cake
+              <li>
+                Afternoon Cake
               </li>
-            <li>
-              A very German dinner choice (Stulle)
+              <li>
+                A very German dinner choice (Stulle)
               </li>
-            <li>
-              A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
+              <li>
+                A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
               </li>
-          </ul>
+            </ul>
+          </Paragraph>
 
         </Box>
         <Box basis="1/2" animation="slideLeft">
@@ -103,12 +112,12 @@ const IndexPage = () => {
       </Box>
     </Box>
 
-    <Box background="dark-1" align="center">
+    <Box background="dark-1" align="center" >
       <Box direction="row-responsive" gap="large" >
         <Box basis="1/2" height="large">
           <Image fit="cover" src={bchack} />
         </Box>
-        <Box basis="1/2" pad={{ horizontal: "medium" }}>
+        <Box basis="1/2" pad={{ horizontal: "medium" }} id="build">
           <Heading level={2} size="xlarge">
             What to build
           </Heading>
@@ -140,7 +149,7 @@ const IndexPage = () => {
       </Box>
     </Box>
 
-    <Box background="pale" align="center" pad="large">
+    <Box background="pale" align="center" pad="large" id="rsvp">
       <CountMeIn />
     </Box>
 
