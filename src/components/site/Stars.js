@@ -12,13 +12,13 @@ const PosEl = styled.div`
 export default function () {
 
     return <>
-        <PosEl top="-50%" left="70%">
+        <PosEl top="-50%" left="60%">
             <Star size="large" color="pale" />
         </PosEl>
-        <PosEl top="90%" left="30%">
+        <PosEl top="90%" left="70%">
             <Star size="large" />
         </PosEl>
-        <PosEl top="110%" left="90%" >
+        <PosEl top="70%" left="5%" >
             <Gift size="xlarge" color="neutral-3" style={{ transform: "rotate(27deg)" }} />
         </PosEl>
         <PosEl top="-10%" left="20%" >

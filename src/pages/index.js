@@ -4,7 +4,7 @@ import { Anchor, Box, Heading, Image, Paragraph, Text } from 'grommet'
 //import { Coffee, Cafeteria } from 'grommet-icons'
 
 import Layout from "../components/layout"
-//import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 import SEO from "../components/seo"
 
@@ -26,8 +26,11 @@ const IndexPage = () => {
           relativePath
           name
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
+            }
+            fixed {
+              ...GatsbyImageSharpFixed
             }
           }
           
@@ -46,13 +49,13 @@ const IndexPage = () => {
 
     <Box align="center" fill="vertical" >
 
-      <Box direction="row-responsive" align="center" >
+      <Box direction="row-responsive" align="center" gap="xlarge" >
 
-        <Box basis="1/2" align="center" animation="slideRight">
-          <img src={mops} width="60%" />
+        <Box basis="1/2" align="center" >
+          <Img fixed={images['mops'].fixed} />
         </Box>
 
-        <Box basis="1/2" direction="column" align="center" animation="slideLeft" style={{ position: 'relative' }}>
+        <Box basis="full" direction="column" align="center" animation="slideLeft" style={{ position: 'relative' }}>
           <Stars />
           <Heading level={3} size="xlarge" margin="none">January, 11th</Heading>
           <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
@@ -72,7 +75,7 @@ const IndexPage = () => {
         <Box pad={{ horizontal: "medium" }} basis="1/2" animation="slideRight" id="expect">
 
           <Heading>What to expect</Heading>
-          <Paragraph alignSelf="center" size="large">
+          <Paragraph alignSelf="center" size="large" fill>
             What's the best way to celebrate <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's birthday</Anchor>? We're abusing
             his passion of being a "professional" hackathon goer and as being the headline
             for the first hack-a-thon of 2020. Lets start the year by getting your hands
@@ -107,7 +110,8 @@ const IndexPage = () => {
 
         </Box>
         <Box basis="1/2" animation="slideLeft">
-          <Image fit="cover" src={location} />
+          <Img fluid={images['location'].fluid} />
+          {/*<Image fit="cover" src={location} />*/}
         </Box>
       </Box>
     </Box>
@@ -115,6 +119,7 @@ const IndexPage = () => {
     <Box background="dark-1" align="center" >
       <Box direction="row-responsive" gap="large" >
         <Box basis="1/2" height="large">
+          {/*<Img fluid={images['bchack'].fluid} />*/}
           <Image fit="cover" src={bchack} />
         </Box>
         <Box basis="1/2" pad={{ horizontal: "medium" }} id="build">
