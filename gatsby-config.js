@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Birthday Hackathon`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Hack into 2020 and get wild on conversational interfaces, bots, messaging and frontend`,
     author: `@stadolf`,
   },
   plugins: [
@@ -21,8 +21,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#222222`,
+        theme_color: `#fff1d7`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
