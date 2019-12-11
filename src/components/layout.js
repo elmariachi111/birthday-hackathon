@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Box, Grommet, Text, Anchor, Heading } from 'grommet';
+import { Box, Grommet, Text, Anchor } from 'grommet';
 import * as Icons from 'grommet-icons'
 import { Footer, Main } from './grommet-master'
 import Header from './site/Header'

@@ -1,15 +1,14 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { Anchor, Box, Heading, Image, Paragraph, Text } from 'grommet'
 //import { Coffee, Cafeteria } from 'grommet-icons'
+import { Helmet } from 'react-helmet'
 
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 
 import SEO from "../components/seo"
 
-import mops from "../images/artwork/mops.png"
-import location from "../images/artwork/location.jpg"
 import bchack from "../images/artwork/bchack.jpg"
 
 import CountMeIn from '../components/site/CountMeIn'
@@ -17,7 +16,7 @@ import Partners from '../components/site/Partners'
 import Stars from '../components/site/Stars'
 
 const IndexPage = () => {
-  const _images = useStaticQuery(graphql`
+  const _data = useStaticQuery(graphql`
   
   query {
     allFile(filter: {relativePath: {regex: "/artwork/"}}) {
@@ -37,16 +36,62 @@ const IndexPage = () => {
         }
       }
     }
+    site {
+      siteMetadata {
+        title
+        description
+        author
+      }
+    }
+
   }
 `)
   let images = {}
-  _images.allFile.edges.forEach(({ node }) => { images[node.name] = node.childImageSharp })
-
+  _data.allFile.edges.forEach(({ node }) => { images[node.name] = node.childImageSharp })
+  const metadata = _data.site.siteMetadata
 
 
   return <Layout>
     <SEO title="Birthday Hackathon" />
-
+    <Helmet>
+      <script type="application/ld+json">{`
+        {
+            "@type": "BusinessEvent",
+            "@context": "http://schema.org",
+            "name": "${metadata.title}",
+            "url": "https://www.birthday-hackathon.de",
+            "description": "${metadata.description}",
+            "startDate": "2020-01-11T09:00:00+01:00",
+            "endDate": "2019-01-11T22:00:00+01:00",
+            "isAccessibleForFree": true,
+            "maximumAttendeeCapacity": 80,
+            "image": "https://www.birthday-hackathon.de/birthdayhackog.png",
+            "eventStatus": "EventScheduled",
+            "location": {
+              "@type": "Place",
+                "name": "tbd",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "DE",
+                    "addressLocality": "Berlin",
+                    "addressRegion": "",
+                    "streetAddress": "tbd",
+                    "postalCode": "12345"
+                }
+            },
+            "offers": [],
+            "performers": [],
+            "organizer": {
+                "@type": "Project",
+                "name": "Coding Earth",
+                "url": "https://coding.earth",
+                "email": "info@coding-earth.com",
+                "description": "A developer community with roots in Berlin"
+            }
+        }
+        `}
+      </script>
+    </Helmet>
     <Box align="center" fill="vertical" >
 
       <Box direction="row-responsive" align="center" gap="xlarge" >

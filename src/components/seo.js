@@ -52,8 +52,20 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: "og:url",
+          content: "https://www.birthday-hackathon.de"
+        },
+        {
+          property: "og:image",
+          content: "https://www.birthday-hackathon.de/birthdayhackog.jpg"
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          property: "twitter:image",
+          content: "https://www.birthday-hackathon.de/birthdayhackog.jpg"
         },
         {
           name: `twitter:creator`,
@@ -69,6 +81,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <link rel="dns-prefetch" href="//fonts.googleapis.com" />
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></link>
     </Helmet>
   )

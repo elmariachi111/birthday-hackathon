@@ -54,8 +54,8 @@ export default (props) => {
                 background="dark-2"
                 round="full"
                 elevation="xlarge"
-                width={size == "small" ? "90vw" : "medium"}
-                basis={size == "small" ? "90vw" : "medium"}
+                width={size === "small" ? "90vw" : "medium"}
+                basis={size === "small" ? "90vw" : "medium"}
                 align="center"
                 justify="center"
             >
