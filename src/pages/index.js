@@ -76,14 +76,14 @@ const IndexPage = () => {
 
           <Heading>What to expect</Heading>
           <Paragraph alignSelf="center" size="large" fill>
-            What's the best way to celebrate <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's birthday</Anchor>? We're abusing
-            his passion of being a "professional" hackathon goer and as being the headline
-            for the first hack-a-thon of 2020. Lets start the year by getting your hands
-            dirty with code, try out something new, meet extraordinary folks and have some
-            fun together.
+            What's the best way to celebrate a developer's birthday, <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan</Anchor> asked himself.
+            We're using his passion of being a "professional" hackathon goer for the headline
+            of 2020's first hackathon. Lets start the year by getting your hands
+            dirty on code, try out something new, meet extraordinary folks to build something technical together.
+            Just because you can.
 
           </Paragraph>
-          <Heading>There will be</Heading>
+          <Heading margin={{ bottom: "none" }}>There'll be</Heading>
 
           <Paragraph alignSelf="center" size="large">
             <ul style={{ listStyleType: "square", margin: 0, padding: 0 }}>
@@ -129,20 +129,20 @@ const IndexPage = () => {
 
           <Text size="large" weight="bold">Conversational interfaces</Text>
           <Paragraph size="large" fill>
-            What's your interpretation on <em>"how to users interact with applications"</em>?
-            Go wild on voice, text, speech, chat and bot. In any direction.
+            What's your interpretation of <em>"how do users interact with applications"</em>?
+            Go wild with APIs for voice, text, speech, chat and bots. In any direction.
           </Paragraph>
 
           <Text size="large" weight="bold">Frontends to bow down for</Text>
           <Paragraph size="large" fill>
-            What's the coolest effect that you can build with the latest frontend tools? Impress us with zooms, scales,
-            visualizations, graphs and usability tweaks.
+            What's the coolest effect that you can build using the latest frontend tools?
+            Impress us with zooms, scales, visualizations, 3D, graphs and usability tweaks.
           </Paragraph>
 
           <Text size="large" weight="bold">Engage, Mr Data!</Text>
           <Paragraph size="large" fill>
             When you've got all the data and APIs of the world at hand, what can you figure out
-              that nobody has figured out before?
+            that nobody has figured out before?
           </Paragraph>
 
           <Text size="large" weight="bold">Map me, baby!</Text>
@@ -164,6 +164,13 @@ const IndexPage = () => {
       </Heading>
 
       <Partners />
+      <Box width="large">
+        <Paragraph fill>
+          Do you want to support us with anything and find your logo on the list? The Birthday Hack is a purely
+          non profit, open source, celebration oriented happening and we'd love to see you support us with it :)
+        If you're interested, leave a mail in our post box: <a href="mailto:info@coding-earth.com?subject=Birthday Hackathon">info@coding-earth.com</a>
+        </Paragraph>
+      </Box>
     </Box>
 
   </Layout >

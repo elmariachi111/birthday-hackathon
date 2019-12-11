@@ -27,7 +27,7 @@ export default ({ children }) => {
           <Text alignSelf="center" color="pale">birthday hackathon</Text>
         </Box>
         <Text textAlign="center" size="small">
-          © 2019 Stefan Adolf | <Anchor href="//coding.earth">coding.earth</Anchor>
+          © 2019 | <Anchor href="//coding.earth">coding.earth</Anchor> | <Anchor href="//coding.earth/imprint">imprint</Anchor>
         </Text>
       </Footer>
     </Grommet >
