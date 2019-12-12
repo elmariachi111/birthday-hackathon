@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Form, FormField, Heading, Button, Paragraph, ResponsiveContext } from 'grommet'
+import { Box, Form, FormField, Heading, Button, Paragraph, ResponsiveContext, Text } from 'grommet'
 import { Like } from "grommet-icons"
 import styled from 'styled-components'
 import _map from "lodash.map"
@@ -67,9 +67,12 @@ export default (props) => {
 
             :
             <Box fill>
-                <Heading level={2} size="xlarge" alignSelf="center" >
+                <Heading level={2} size="xlarge" alignSelf="center" margin={{ "bottom": "none" }}>
                     Okay, count me in!
                 </Heading>
+                <Text size="medium" alignSelf="center" margin={{ top: "small", bottom: "large" }}>
+                    submit some basic data to let us know that you'll be in.
+                </Text>
                 <Form name={NETLIFY_FORM_NAME}
                     method="POST"
                     data-netlify="true"
@@ -90,9 +93,10 @@ export default (props) => {
                             value={NETLIFY_FORM_NAME}
                         />
                     </HiddenField>
-                    <FormField name="name" label="your name" required />
+                    <FormField name="name" label="your name*" required />
+                    <FormField name="email" validate={validate} label="email address*" />
                     <FormField name="twitter" label="github || twitter handle" />
-                    <FormField name="email" validate={validate} label="email address" />
+
                     <Button type="submit" primary label="Submit" />
                 </Form>
             </Box>
