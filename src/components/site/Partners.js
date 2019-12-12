@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Image } from 'grommet'
+import { Anchor, Box, Image } from 'grommet'
 
 import audibene from "../../images/logos/audibene-logo.svg"
 import twilio from "../../images/logos/twilio.png"
@@ -12,19 +12,23 @@ export default function (props) {
     return (
         <Box direction="row-responsive" wrap={true}>
             <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+
                 <Image fill fit="contain" src={twilio} />
+
             </Box>
             <Box basis="20%" pad="medium" width={{ max: "200px" }}>
                 <Image fill fit="contain" src={audibene} />
             </Box>
             <Box basis="20%" pad="medium" width={{ max: "200px" }}>
+
                 <Image fill fit="contain" src={turbinekreuzberg} />
+
             </Box>
             <Box basis="20%" pad="medium" width={{ max: "200px" }}>
                 <Image fill fit="contain" src={coachhub} />
             </Box>
             <Box basis="20%" pad="medium" width={{ max: "200px" }}>
-                <Image fill fit="contain" src={codingberlin} />
+                <Image fit="contain" src={codingberlin} width="100px" alignSelf="center" />
             </Box>
         </Box>
     )

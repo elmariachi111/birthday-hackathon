@@ -18,8 +18,8 @@ export default function () {
         <PosEl top="90%" left="70%">
             <Star size="large" />
         </PosEl>
-        <PosEl top="70%" left="5%" >
-            <Gift size="xlarge" color="neutral-3" style={{ transform: "rotate(27deg)" }} />
+        <PosEl top="75%" left="15%" >
+            <Gift size="large" color="neutral-3" style={{ transform: "rotate(27deg)" }} />
         </PosEl>
         <PosEl top="-10%" left="20%" >
             <IceCream size="large" color="neutral-2" style={{ transform: "rotate(-12deg)" }} />
