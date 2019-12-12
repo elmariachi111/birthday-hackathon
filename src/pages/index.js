@@ -201,7 +201,7 @@ const IndexPage = () => {
             <Anchor href="https://www.kaggle.com/">world</Anchor>{' '}
             <Anchor href="https://data.worldbank.org/">at</Anchor>{' '}
             <Anchor href="https://www.ncdc.noaa.gov/">hand</Anchor>, what can you figure out
-            that nobody has figured out before? That's maybe a good opportunity to contribute some code for an <Anchor href="http://okfnlabs.org/projects/">OKLabs project</Anchor>.
+            that nobody has figured out before? That's maybe a good opportunity to contribute some code for an <Anchor href="https://codefor.de/">OKLabs project</Anchor>.
           </Paragraph>
 
           <Text size="large" weight="bold">Map me, baby!</Text>
