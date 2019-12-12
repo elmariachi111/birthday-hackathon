@@ -96,8 +96,10 @@ export default (props) => {
                     <FormField name="name" label="your name*" required />
                     <FormField name="email" validate={validate} label="email address*" />
                     <FormField name="twitter" label="github || twitter handle" />
-
-                    <Button type="submit" primary label="Submit" />
+                    <Box direction="column" align="center">
+                        <Button type="submit" primary color="neutral-4" label="Put me on your list!" />
+                        <Text size="xsmall">mail just used for announcements</Text>
+                    </Box>
                 </Form>
             </Box>
         }
