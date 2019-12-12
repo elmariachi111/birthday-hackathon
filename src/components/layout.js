@@ -29,6 +29,9 @@ export default ({ children }) => {
         <Text textAlign="center" size="small">
           © 2019 | <Anchor href="//coding.earth">coding.earth</Anchor> | <Anchor href="//coding.earth/imprint">imprint</Anchor>
         </Text>
+        <Anchor href="https://app.netlify.com/sites/birthday-hackathon/deploys">
+          <img src="https://api.netlify.com/api/v1/badges/cd25187e-4437-45ec-be43-ca634a4f9678/deploy-status" />
+        </Anchor>
       </Footer>
     </Grommet >
   )
