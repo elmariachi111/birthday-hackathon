@@ -12,6 +12,7 @@ import SEO from "../components/seo"
 import bchack from "../images/artwork/bchack.jpg"
 
 import CountMeIn from '../components/site/CountMeIn'
+import Tickets from '../components/site/Tickets'
 import Partners from '../components/site/Partners'
 import Stars from '../components/site/Stars'
 
@@ -54,6 +55,7 @@ const IndexPage = () => {
   return <Layout>
     <SEO title="Birthday Hackathon" />
     <Helmet>
+      <script src="https://www.eventbrite.de/static/widgets/eb_widgets.js"></script>
       <script type="application/ld+json">{`
         {
             "@type": "BusinessEvent",
@@ -214,7 +216,8 @@ const IndexPage = () => {
     </Box>
 
     <Box background="pale" align="center" pad="large" id="rsvp">
-      <CountMeIn />
+      {/*<CountMeIn />*/}
+      <Tickets />
     </Box>
 
     <Box background="dark-1" align="center" direction="column" style={{ display: "none" }} >
