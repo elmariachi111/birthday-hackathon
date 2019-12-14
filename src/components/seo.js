@@ -81,6 +81,11 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <style>
+        {`body {
+          margin: 0px;
+        `}
+      </style>
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></link>
     </Helmet>

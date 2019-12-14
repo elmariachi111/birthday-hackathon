@@ -11,11 +11,12 @@ import '../css/typography.css'
 export default ({ children }) => {
 
   return (
-    <Grommet theme={theme} full themeMode="dark" >
+    <Grommet theme={theme} themeMode="dark" >
       <Header />
 
       <Main >
         {children}
+
       </Main>
 
       <Footer
@@ -30,7 +31,7 @@ export default ({ children }) => {
           © 2019 | <Anchor href="//coding.earth">coding.earth</Anchor> | <Anchor href="//coding.earth/imprint">imprint</Anchor>
         </Text>
         <Anchor href="https://app.netlify.com/sites/birthday-hackathon/deploys">
-          <img src="https://api.netlify.com/api/v1/badges/cd25187e-4437-45ec-be43-ca634a4f9678/deploy-status" />
+          <img src="https://api.netlify.com/api/v1/badges/cd25187e-4437-45ec-be43-ca634a4f9678/deploy-status" alt="netlify build status" />
         </Anchor>
       </Footer>
     </Grommet >

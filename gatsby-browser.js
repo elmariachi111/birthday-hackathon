@@ -14,14 +14,6 @@ function scrollToHash(hash) {
         document.getElementById('theheader').scrollIntoView({ behavior: 'smooth', block: 'center' })
     }
 }
-export const onRouteUpdate = ({ location: { hash } }) => {
-    if (hash) {
-        scrollToHash(hash.slice(1))
-        return false
-        //window.setTimeout(scrollTo(hash.slice(1)), 1500)
-    }
-}
-
 
 
 export const shouldUpdateScroll = ({
@@ -37,5 +29,15 @@ export const shouldUpdateScroll = ({
     window.scrollTo(...(currentPosition || [0, 0]))
     console.log(currentPosition)
 */
-    return false
+    //return false
+}
+
+
+export function onRouteUpdate({ location }) {
+    if (location.hash) {
+        scrollToHash(location.hash.slice(1))
+        //window.setTimeout(scrollTo(hash.slice(1)), 1500)
+    }
+
+
 }

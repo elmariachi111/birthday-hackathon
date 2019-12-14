@@ -1,5 +1,5 @@
 import React from "react"
-import { Anchor, Box, Image } from 'grommet'
+import { Box, Image } from 'grommet'
 
 import audibene from "../../images/logos/audibene-logo.svg"
 import twilio from "../../images/logos/twilio.png"

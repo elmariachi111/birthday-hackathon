@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "babel-plugin-styled-components": "^1.10.6",
     "email-validator": "^2.0.4",
     "gatsby": "^2.18.4",

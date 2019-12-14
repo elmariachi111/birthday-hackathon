@@ -11,10 +11,11 @@ import SEO from "../components/seo"
 
 import bchack from "../images/artwork/bchack.jpg"
 
-import CountMeIn from '../components/site/CountMeIn'
+import Pug from '../components/site/Pug'
+//import CountMeIn from '../components/site/CountMeIn'
 import Tickets from '../components/site/Tickets'
 import Partners from '../components/site/Partners'
-import Stars from '../components/site/Stars'
+
 
 const IndexPage = () => {
   const _data = useStaticQuery(graphql`
@@ -94,24 +95,8 @@ const IndexPage = () => {
         `}
       </script>
     </Helmet>
-    <Box align="center" fill="vertical" >
 
-      <Box direction="row-responsive" align="center" gap="xlarge" >
-
-        <Box basis="1/2" align="center" >
-          <Img fixed={images['mops'].fixed} />
-        </Box>
-
-        <Box basis="full" direction="column" align="center" animation="slideLeft" style={{ position: 'relative' }}>
-          <Stars />
-          <Heading level={3} size="xlarge" margin="none">January, 11th</Heading>
-          <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
-          <Paragraph >
-            <Text weight="bold" size="large">Hack for fun!</Text>
-          </Paragraph>
-        </Box>
-      </Box>
-    </Box>
+    <Pug />
 
     <Box background="pale"  >
       <Heading level={2} size="xlarge" alignSelf="center" >
