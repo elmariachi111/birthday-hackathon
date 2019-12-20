@@ -12,8 +12,8 @@ import SEO from "../components/seo"
 import bchack from "../images/artwork/bchack.jpg"
 
 import Pug from '../components/site/Pug'
-//import CountMeIn from '../components/site/CountMeIn'
-import Tickets from '../components/site/Tickets'
+import CountMeIn from '../components/site/CountMeIn'
+//import Tickets from '../components/site/Tickets'
 import Partners from '../components/site/Partners'
 
 
@@ -57,43 +57,7 @@ const IndexPage = () => {
     <SEO title="Birthday Hackathon" />
     <Helmet>
       <script src="https://www.eventbrite.de/static/widgets/eb_widgets.js"></script>
-      <script type="application/ld+json">{`
-        {
-            "@type": "BusinessEvent",
-            "@context": "http://schema.org",
-            "name": "${metadata.title}",
-            "url": "https://www.birthday-hackathon.de",
-            "description": "${metadata.description}",
-            "startDate": "2020-01-11T09:00:00+01:00",
-            "endDate": "2019-01-11T22:00:00+01:00",
-            "isAccessibleForFree": true,
-            "maximumAttendeeCapacity": 80,
-            "image": "https://www.birthday-hackathon.de/birthdayhackog.png",
-            "eventStatus": "EventScheduled",
-            "location": {
-              "@type": "Place",
-                "name": "tbd",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "DE",
-                    "addressLocality": "Berlin",
-                    "addressRegion": "",
-                    "streetAddress": "tbd",
-                    "postalCode": "12345"
-                }
-            },
-            "offers": [],
-            "performers": [],
-            "organizer": {
-                "@type": "Project",
-                "name": "Coding Earth",
-                "url": "https://coding.earth",
-                "email": "info@coding-earth.com",
-                "description": "A developer community with roots in Berlin"
-            }
-        }
-        `}
-      </script>
+
     </Helmet>
 
     <Pug />
@@ -201,8 +165,8 @@ const IndexPage = () => {
     </Box>
 
     <Box background="pale" align="center" pad="large" id="rsvp">
-      {/*<CountMeIn />*/}
-      <Tickets />
+      <CountMeIn />
+      {/*<Tickets /> */}
     </Box>
 
     <Box background="dark-1" align="center" direction="column" style={{ display: "none" }} >
