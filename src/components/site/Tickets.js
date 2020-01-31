@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Box, Heading } from 'grommet'
 
-const EVENTID = '86120353295'
+const EVENTID = '92374999109'
 
 export default (props) => {
 
@@ -11,10 +11,10 @@ export default (props) => {
                 // Required
                 widgetType: 'checkout',
                 eventId: EVENTID,
-                iframeContainerId: 'eventbrite-widget-container-86120353295',
+                iframeContainerId: 'eventbrite-widget-container-92374999109',
 
                 // Optional
-                //iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
                 //onOrderComplete: exampleCallback  // Method called when an order has successfully completed
             });
         }
@@ -28,7 +28,7 @@ export default (props) => {
             Okay, count me in!
         </Heading>
         <Box fill>
-            <div id="eventbrite-widget-container-86120353295">
+            <div id="eventbrite-widget-container-92374999109">
 
             </div>
         </Box>

@@ -5,7 +5,6 @@ import { Anchor, Box, Heading, Image, Paragraph, Text } from 'grommet'
 import { Helmet } from 'react-helmet'
 
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 
 import SEO from "../components/seo"
 
@@ -13,9 +12,10 @@ import bchack from "../images/artwork/bchack.jpg"
 import imgLocation from "../images/artwork/bch18.jpg"
 
 import Pug from '../components/site/Pug'
-import CountMeIn from '../components/site/CountMeIn'
-//import Tickets from '../components/site/Tickets'
+//import CountMeIn from '../components/site/CountMeIn'
+import Tickets from '../components/site/Tickets'
 import Partners from '../components/site/Partners'
+import Venue from '../components/site/Venue'
 
 
 const IndexPage = () => {
@@ -84,7 +84,7 @@ const IndexPage = () => {
             <Paragraph fill>
               BTW, if you're wondering whose birthday it is - it's a
             rather late celebration of <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's</Anchor> birthday
-                                    that we had to move slightly for some organizational hiccups :) As Turbine Kreuzberg's "ambassador"
+                                                                                                                                        that we had to move slightly for some organizational hiccups :) As Turbine Kreuzberg's "ambassador"
                       and "president" (not his idea) of the <Anchor href="https://coding.earth">coding earth</Anchor> meetup
 community he's a passionate hackathon goer and will help us out with a reason to bring cake along.
 If it's your birthday that day, let us know and we'll put you on the "congratulations" lineup.
@@ -125,6 +125,42 @@ If it's your birthday that day, let us know and we'll put you on the "congratula
     <Box background="white" align="center" pad="large">
       <Partners />
     </Box>
+
+    <Box background="pale" align="center" id="venue"  >
+      <Box direction="row-responsive" gap="large" fill>
+
+        <Box basis="1/2" height="medium">
+          <Box direction="column" fill align="center">
+            <Heading level={2} size="xlarge" margin={{ bottom: "small" }}>
+              Where and When
+            </Heading>
+            <Paragraph margin="small">
+              <Text weight="bold" size="large">February, 22nd 2020 </Text>
+            </Paragraph>
+            <Paragraph size="large" margin="none">
+              9am - 10pm
+            </Paragraph>
+
+            <Paragraph size="medium" fill>
+              Wild Code School Berlin,
+              Oudenarder Str. 16
+
+              13347 Berlin
+              </Paragraph>
+          </Box>
+        </Box>
+
+        <Box basis="1/2" fill>
+
+          <Venue
+            latitude={52.5534894}
+            longitude={13.3605066} />
+
+        </Box>
+
+      </Box>
+    </Box>
+
 
     <Box background="dark-1" align="center" >
       <Box direction="row-responsive" gap="large" >
@@ -180,26 +216,9 @@ If it's your birthday that day, let us know and we'll put you on the "congratula
     </Box>
 
     <Box background="pale" align="center" pad="large" id="rsvp">
-      <CountMeIn />
-      {/*<Tickets /> */}
+      {/*<CountMeIn /> */}
+      {<Tickets />}
     </Box>
-
-    <Box background="dark-1" align="center" direction="column" style={{ display: "none" }} >
-      <Heading level={2} size="xlarge">
-        The Venue
-      </Heading>
-
-      <Box direction="row-responsive" fill>
-        <Box basis="1/2" height="large" elevation="xlarge">
-
-        </Box>
-        <Box basis="1/2" elevation="xlarge">
-
-
-        </Box>
-      </Box>
-    </Box>
-
 
 
   </Layout >

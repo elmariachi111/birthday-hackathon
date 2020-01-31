@@ -56,7 +56,7 @@ function Stars({ elementShift }) {
     ]
 
     return <>
-        {els.map(el => <PlxElement {...el} />)}
+        {els.map((el, idx) => <PlxElement {...el} key={`el-${idx}`} />)}
     </>
 }
 

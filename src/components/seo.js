@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: "og:image",
-          content: "https://www.birthday-hackathon.de/birthdayhackog.jpg"
+          content: "https://www.birthday-hackathon.de/birthdayhackog2.jpg"
         },
         {
           name: `twitter:card`,
@@ -65,7 +65,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: "twitter:image",
-          content: "https://www.birthday-hackathon.de/birthdayhackog.jpg"
+          content: "https://www.birthday-hackathon.de/birthdayhackog2.jpg"
         },
         {
           name: `twitter:creator`,
