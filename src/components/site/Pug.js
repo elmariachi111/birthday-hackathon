@@ -103,10 +103,10 @@ export default () => {
 
             <Box basis="full" direction="column" align="center" animation="slideLeft" style={{ position: 'relative' }}>
                 <Stars elementShift={elementShift} />
-                <Heading level={2} size="xlarge" margin="none">February 2020</Heading>
+                <Heading level={2} size="xlarge" margin="none">February, 22nd 2020</Heading>
                 <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
                 <Paragraph >
-                    <Text weight="bold" size="large">Hack for fun!</Text>
+                    <Text weight="bold" size="large"></Text>
                 </Paragraph>
             </Box>
         </Box>

@@ -10,6 +10,7 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 import bchack from "../images/artwork/bchack.jpg"
+import imgLocation from "../images/artwork/bch18.jpg"
 
 import Pug from '../components/site/Pug'
 import CountMeIn from '../components/site/CountMeIn'
@@ -50,7 +51,7 @@ const IndexPage = () => {
 `)
   let images = {}
   _data.allFile.edges.forEach(({ node }) => { images[node.name] = node.childImageSharp })
-  const metadata = _data.site.siteMetadata
+  //const metadata = _data.site.siteMetadata
 
 
   return <Layout>
@@ -69,47 +70,60 @@ const IndexPage = () => {
 
       <Box direction="row-responsive" gap="large">
         <Box pad={{ horizontal: "medium" }} basis="1/2" animation="slideRight" id="expect">
-
-          <Heading>What to expect</Heading>
-          <Paragraph alignSelf="center" size="large" fill>
-            What's the best way to celebrate a developer's birthday, <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan</Anchor> asked himself.
-            We're using his passion of being a "professional" hackathon goer for the headline
-            of 2020's first hackathon. Lets start the year by getting your hands
-            dirty on code, try out something new, meet extraordinary folks to build something technical together.
-            Just because you can.
+          <Box width="large" alignSelf="center">
+            <Heading margin="none">What to expect</Heading>
+            <Paragraph alignSelf="center" size="large" fill>
+              Attending a hackathon can be heavy duty: team building, pitching, hacking through the night...{' '}
+              <em>Birthday hackathon</em> instead wants to be a cozy opportunity to sharpen your skills on
+              technology without any pressure or jury to judge about challenges. We're meeting up
+              in a nice coworking space and hack the day away, get our hands dirty on communication
+              stacks by Twilio, AWS and Slack, or try out something new and meet extraordinary folks to
+              craft something technical together. Just because we can.
 
           </Paragraph>
-          <Heading margin={{ bottom: "none" }}>There'll be</Heading>
-
-          <Paragraph alignSelf="center" size="large">
-            <ul style={{ listStyleType: "square", margin: 0, padding: 0 }}>
-              <li>
-                unlimited coffee supplies
-              </li>
-              <li>
-                A healthy breakfast
-              </li>
-              <li>
-                Two lunch options
-              </li>
-              <li>
-                Afternoon Cake
-              </li>
-              <li>
-                A very German dinner choice (Stulle)
-              </li>
-              <li>
-                A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
-              </li>
-            </ul>
+            <Paragraph fill>
+              BTW, if you're wondering whose birthday it is - it's a
+            rather late celebration of <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's</Anchor> birthday
+                                    that we had to move slightly for some organizational hiccups :) As Turbine Kreuzberg's "ambassador"
+                      and "president" (not his idea) of the <Anchor href="https://coding.earth">coding earth</Anchor> meetup
+community he's a passionate hackathon goer and will help us out with a reason to bring cake along.
+If it's your birthday that day, let us know and we'll put you on the "congratulations" lineup.
           </Paragraph>
+            <Heading margin={{ bottom: "none" }}>There'll be</Heading>
 
+            <Paragraph alignSelf="center" size="large">
+              <ul style={{ listStyleType: "square", margin: 0, padding: 0 }}>
+                <li>
+                  unlimited coffee supplies
+              </li>
+                <li>
+                  A healthy breakfast
+              </li>
+                <li>
+                  Two lunch options
+              </li>
+                <li>
+                  Afternoon Cake
+              </li>
+                <li>
+                  A very German dinner choice
+              </li>
+                <li>
+                  A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
+              </li>
+              </ul>
+            </Paragraph>
+          </Box>
         </Box>
         <Box basis="1/2" animation="slideLeft">
-          <Img fluid={images['location'].fluid} />
-          {/*<Image fit="cover" src={location} />*/}
+          {/*<Img fluid={images['location'].fluid} />*/}
+          <Image fit="cover" src={imgLocation} />
         </Box>
       </Box>
+    </Box>
+
+    <Box background="white" align="center" pad="large">
+      <Partners />
     </Box>
 
     <Box background="dark-1" align="center" >
@@ -119,47 +133,48 @@ const IndexPage = () => {
           <Image fit="cover" src={bchack} />
         </Box>
         <Box basis="1/2" pad={{ horizontal: "medium" }} id="build">
-          <Heading level={2} size="xlarge" margin={{ bottom: "medium" }}>
-            What to build
+          <Box width="large" alignSelf="center">
+            <Heading level={2} size="xlarge" margin={{ bottom: "medium" }}>
+              What to build
           </Heading>
 
-          <Text size="large" weight="bold">Conversational interfaces</Text>
-          <Paragraph size="medium" fill>
-            What's your interpretation of <em>"how do users interact with applications"</em>?
+            <Text size="large" weight="bold">Conversational interfaces</Text>
+            <Paragraph size="medium" fill>
+              What's your interpretation of <em>"how do users interact with applications"</em>?
             Go wild with APIs for <Anchor href="https://www.twilio.com/">voice</Anchor>,
             text, <Anchor href="https://developer.amazon.com/en-US/alexa">speech</Anchor>,
             <Anchor href="https://matrix.org/">chat</Anchor> and <Anchor href="https://api.slack.com/">bots</Anchor>. In any direction.
           </Paragraph>
 
-          <Text size="large" weight="bold">Frontends to bow down for</Text>
-          <Paragraph size="medium" fill>
-            What's the coolest effect that you can build using the latest frontend tools?
+            <Text size="large" weight="bold">Frontends to bow down for</Text>
+            <Paragraph size="medium" fill>
+              What's the coolest effect that you can build using the latest frontend tools?
             Impress us with <Anchor href="https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59">effects</Anchor>,{' '}
-            <Anchor href="https://d3js.org/">visualizations</Anchor>,{' '}
-            <Anchor href="https://bashooka.com/coding/3d-javascript-libraries/">3D</Anchor>,{' '}
-            <Anchor href="https://www.sitepoint.com/best-javascript-charting-libraries/">graphs</Anchor>{' '}
-            and <Anchor href="https://hackernoon.com/23-best-react-ui-component-libraries-and-frameworks-250a81b2ac42">usability</Anchor> tweaks.
+              <Anchor href="https://d3js.org/">visualizations</Anchor>,{' '}
+              <Anchor href="https://bashooka.com/coding/3d-javascript-libraries/">3D</Anchor>,{' '}
+              <Anchor href="https://www.sitepoint.com/best-javascript-charting-libraries/">graphs</Anchor>{' '}
+              and <Anchor href="https://hackernoon.com/23-best-react-ui-component-libraries-and-frameworks-250a81b2ac42">usability</Anchor> tweaks.
           </Paragraph>
 
-          <Text size="large" weight="bold">Engage, Mr Data!</Text>
-          <Paragraph size="medium" fill>
-            When you've got <Anchor href="https://daten.berlin.de/datensaetze">all</Anchor>{' '}
-            the <Anchor href="https://www.govdata.de/">data</Anchor>{' '}
-            <Anchor href="https://data.europa.eu/euodp/en/data/">and</Anchor>{' '}
-            <Anchor href="https://www.opendatanetwork.com/">APIs</Anchor>{' '}
-            <Anchor href="https://registry.opendata.aws/">of</Anchor>{' '}
-            <Anchor href="https://www.data.gov/">the</Anchor>{' '}
-            <Anchor href="https://www.kaggle.com/">world</Anchor>{' '}
-            <Anchor href="https://data.worldbank.org/">at</Anchor>{' '}
-            <Anchor href="https://www.ncdc.noaa.gov/">hand</Anchor>, what can you figure out
+            <Text size="large" weight="bold">Engage, Mr Data!</Text>
+            <Paragraph size="medium" fill>
+              When you've got <Anchor href="https://daten.berlin.de/datensaetze">all</Anchor>{' '}
+              the <Anchor href="https://www.govdata.de/">data</Anchor>{' '}
+              <Anchor href="https://data.europa.eu/euodp/en/data/">and</Anchor>{' '}
+              <Anchor href="https://www.opendatanetwork.com/">APIs</Anchor>{' '}
+              <Anchor href="https://registry.opendata.aws/">of</Anchor>{' '}
+              <Anchor href="https://www.data.gov/">the</Anchor>{' '}
+              <Anchor href="https://www.kaggle.com/">world</Anchor>{' '}
+              <Anchor href="https://data.worldbank.org/">at</Anchor>{' '}
+              <Anchor href="https://www.ncdc.noaa.gov/">hand</Anchor>, what can you figure out
             that nobody has figured out before? That's maybe a good opportunity to contribute some code for an <Anchor href="https://codefor.de/">OKLabs project</Anchor>.
           </Paragraph>
 
-          <Text size="large" weight="bold">Map me, baby!</Text>
-          <Paragraph size="medium" fill>
-            Go crazy on <Anchor href="https://docs.mapbox.com/mapbox-gl-js/api/">map styles</Anchor> and <Anchor href="https://foam.space/map">location services</Anchor> and <Anchor href="https://www.esri.com/en-us/arcgis/products/mapping">visualize</Anchor> something really meaningful
+            <Text size="large" weight="bold">Map me, baby!</Text>
+            <Paragraph size="medium" fill>
+              Go crazy on <Anchor href="https://docs.mapbox.com/mapbox-gl-js/api/">map styles</Anchor> and <Anchor href="https://foam.space/map">location services</Anchor> and <Anchor href="https://www.esri.com/en-us/arcgis/products/mapping">visualize</Anchor> something really meaningful
           </Paragraph>
-
+          </Box>
         </Box>
       </Box>
     </Box>
@@ -185,20 +200,7 @@ const IndexPage = () => {
       </Box>
     </Box>
 
-    <Box background="white" align="center">
-      <Heading level={2} size="xlarge">
-        Partners
-      </Heading>
 
-      <Partners />
-      <Box width="large">
-        <Paragraph fill size="small">
-          Do you want to support us with anything and find your logo on the list? The Birthday Hack is a purely
-          non profit, open source, celebration oriented happening and we'd love to see you support us with it :)
-        If you're interested, leave a mail in our post box: <a href="mailto:info@coding-earth.com?subject=Birthday Hackathon">info@coding-earth.com</a>
-        </Paragraph>
-      </Box>
-    </Box>
 
   </Layout >
 }
