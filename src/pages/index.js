@@ -68,7 +68,7 @@ const IndexPage = () => {
         A cozy Saturday to hack away
       </Heading>
 
-      <Box direction="row-responsive" gap="large">
+      <Box direction="row-responsive" gap="large" style={{ zIndex: 40 }}>
         <Box pad={{ horizontal: "medium" }} basis="1/2" animation="slideRight" id="expect">
           <Box width="large" alignSelf="center">
             <Heading margin="none">What to expect</Heading>
@@ -84,7 +84,7 @@ const IndexPage = () => {
             <Paragraph fill>
               BTW, if you're wondering whose birthday it is - it's a
             rather late celebration of <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's</Anchor> birthday
-                                                                                                                                        that we had to move slightly for some organizational hiccups :) As Turbine Kreuzberg's "ambassador"
+                                                                                                                                          that we had to move slightly for some organizational hiccups :) As Turbine Kreuzberg's "ambassador"
                       and "president" (not his idea) of the <Anchor href="https://coding.earth">coding earth</Anchor> meetup
 community he's a passionate hackathon goer and will help us out with a reason to bring cake along.
 If it's your birthday that day, let us know and we'll put you on the "congratulations" lineup.
