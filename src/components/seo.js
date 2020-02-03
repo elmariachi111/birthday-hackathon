@@ -61,11 +61,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
-          property: "twitter:image",
+          name: "twitter:image",
           content: "https://www.birthday-hackathon.de/birthdayhackog2.jpg"
+        },
+        {
+          name: "twitter:site",
+          content: "@Coding_Berlin"
         },
         {
           name: `twitter:creator`,
