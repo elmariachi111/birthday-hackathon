@@ -34,9 +34,7 @@ export default function (props) {
             </Box>
             <Box width="xlarge">
                 <Paragraph fill size="medium">
-                    Do you want to support us with anything and find your logo on the list? The Birthday Hack is a purely
-                    non profit, open source, celebration oriented happening and we'd love to see you support us with it :)
-        If you're interested, leave a mail in our post box: <a href="mailto:info@coding-earth.com?subject=Birthday Hackathon">info@coding-earth.com</a>
+                    Do you want to support us with anything and find your logo on the list? The Birthday Hack is a purely non profit, open source, celebration-oriented happening and we'd love to see you support us with it. :) If you're interested, leave a mail in our post box: <a href="mailto:info@coding-earth.com?subject=Birthday Hackathon">info@coding-earth.com</a>
                 </Paragraph>
             </Box>
         </>

@@ -74,20 +74,21 @@ const IndexPage = () => {
             <Heading margin="none">What to expect</Heading>
             <Paragraph alignSelf="center" size="large" fill>
               Attending a hackathon can be heavy duty: team building, pitching, hacking through the night...{' '}
-              <em>Birthday hackathon</em> instead wants to be a cozy opportunity to sharpen your skills on
-              technology without any pressure or jury to judge about challenges. We're meeting up
-              in a nice coworking space and hack the day away, get our hands dirty on communication
-              stacks by Twilio, AWS and Slack, or try out something new and meet extraordinary folks to
-              craft something technical together. Just because we can.
-
+              <em>Birthday hackathon</em> instead wants to be a cozy opportunity to sharpen your
+              technological skillset without any pressure or jury to judge challenges.
+              We're meeting up in a nice coworking space and hacking the day away,
+              getting our hands dirty on communication stacks by Twilio, AWS and Slack,
+              or trying out something new and meeting extraordinary folks to craft something technical together.
+              Just because we can.
           </Paragraph>
             <Paragraph fill>
-              BTW, if you're wondering whose birthday it is - it's a
-            rather late celebration of <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's</Anchor> birthday
-                                                                                                                                          that we had to move slightly for some organizational hiccups :) As Turbine Kreuzberg's "ambassador"
-                      and "president" (not his idea) of the <Anchor href="https://coding.earth">coding earth</Anchor> meetup
-community he's a passionate hackathon goer and will help us out with a reason to bring cake along.
-If it's your birthday that day, let us know and we'll put you on the "congratulations" lineup.
+              BTW, if you're wondering whose birthday it is -
+              it's a rather late celebration of <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's</Anchor> birthday
+              that we had to move slightly due to some organizational hiccups. :)
+              As Turbine Kreuzberg's "ambassador" and "president" (not his idea)
+              of the <Anchor href="https://coding.earth">coding earth</Anchor> meetup community,
+              he's a passionate hackathon goer and will help us out with a reason to bring cake along.
+              If it's your birthday that day, let us know and we'll put you on the "congratulations" lineup.
           </Paragraph>
             <Heading margin={{ bottom: "none" }}>There'll be</Heading>
 
