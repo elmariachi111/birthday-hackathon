@@ -81,7 +81,7 @@ const IndexPage = () => {
               get our hands dirty on communication stacks by Twilio, AWS and Slack,
               and try out something new.
 
-              Lets meet some extraordinary folks and craft something extraordinary together. Just because we can.
+              Lets meet up as gifted engineers and craft something extraordinary together. Just because we can.
             </Paragraph>
             <Paragraph fill size="small">
               * it's actually a rather late celebration of <Anchor href="https://www.linkedin.com/in/stadolf/">Stefan's</Anchor> birthday
