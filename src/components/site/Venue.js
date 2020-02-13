@@ -17,7 +17,7 @@ export default ({ latitude, longitude }) => {
     height: 500,
     latitude,
     longitude,
-    zoom: 12
+    zoom: 14
   })
 
   const [isClient, setIsClient] = useState(false)
@@ -31,7 +31,7 @@ export default ({ latitude, longitude }) => {
       {isClient &&
                 (<ReactMapGL
                   {...viewport}
-                  mapStyle="mapbox://styles/mapbox/streets-v9"
+                  mapStyle="mapbox://styles/stadolf/ck6kzzgt518b91ip7twr79umx"
                   mapboxApiAccessToken={process.env.GATSBY_MAPBOX_TOKEN}
                   reuseMaps={true}
                   scrollZoom={true}
