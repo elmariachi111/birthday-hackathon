@@ -10,6 +10,7 @@ import SEO from '../components/seo'
 
 import bchack from '../images/artwork/bchack.jpg'
 import imgLocation from '../images/artwork/bch18.jpg'
+import imgWcs from '../images/artwork/location_wcs.jpg'
 
 import Pug from '../components/site/Pug'
 // import CountMeIn from '../components/site/CountMeIn'
@@ -128,10 +129,11 @@ const IndexPage = () => {
     </Box>
 
     <Box background="pale" align="center" id="venue" >
-      <Box direction="row-responsive" gap="large" fill>
+      <Box direction="row-responsive" fill>
 
-        <Box basis="1/2" >
-          <Box direction="column" fill align="center" >
+        <Box basis="1/2" style={{ background: `url(${imgWcs})`, backgroundSize: 'cover' }}>
+
+          <Box align="center" pad="large" background="pale" style={{ opacity: 0.93, width: '75%', margin: 'auto auto' }}>
             <Heading level={2} size="xlarge" >
               Where and When
             </Heading>
@@ -154,8 +156,8 @@ const IndexPage = () => {
         <Box basis="1/2" fill>
 
           <Venue
-            latitude={52.5534894}
-            longitude={13.3605066} />
+            latitude={52.552769}
+            longitude={13.358970} />
 
         </Box>
 
