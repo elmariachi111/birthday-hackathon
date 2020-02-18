@@ -52,6 +52,13 @@ export default function WhatToBuild () {
             that nobody has figured out before? Bonus: contribute some code to an <Anchor href="https://codefor.de/">OKLabs project</Anchor>.
         </Challenge>
 
+        <Challenge title="A Lisk in Chains">
+            Let <Anchor>Lisk</Anchor> convince your that blockchains will change the world as we know it!
+            Play around with <Anchor href="https://lisk.io/documentation/lisk-sdk/">Lisk's SDK</Anchor> and get a feeling for the
+            awesomeness of Javascript based <Anchor href="https://lisk.io/documentation/lisk-sdk/tutorials/hello-world.html">custom transactions</Anchor>{' '}
+            based on ultimately secure <Anchor href="https://lisk.io/documentation/lisk-core/">distributed ledger technology</Anchor>.
+        </Challenge>
+
         <Challenge title="Map me, baby!">
             Where to go next? Maps have an immense impact on our daily lives.
               Go crazy on <Anchor href="https://docs.mapbox.com/mapbox-gl-js/api/">map styles</Anchor>,
@@ -60,6 +67,7 @@ export default function WhatToBuild () {
                or <Anchor href="https://www.esri.com/en-us/arcgis/products/mapping">visualize</Anchor> something
                in new insightful ways.
         </Challenge>
+
       </Box>
     </Box>
   )

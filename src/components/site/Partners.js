@@ -6,6 +6,7 @@ import twilio from '../../images/logos/twilio.png'
 import turbinekreuzberg from '../../images/logos/logo_txb_black.png'
 import wcs from '../../images/logos/WCS.png'
 import codingberlin from '../../images/logos/coding-berlin.png'
+import lisk from '../../images/logos/lisk.svg'
 
 function ImgBox ({ image }) {
   return (
@@ -31,6 +32,7 @@ export default function Partners (props) {
         <ImgBox image={wcs} />
         <ImgBox image={twilio} />
         <ImgBox image={codingberlin} />
+        <ImgBox image={lisk} />
       </Box>
       <Box width="xlarge">
         <Paragraph fill size="medium">
