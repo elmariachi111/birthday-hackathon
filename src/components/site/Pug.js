@@ -62,7 +62,7 @@ function Stars ({ elementShift }) {
   </>
 }
 
-export default function Pug () {
+export default function Pug ({ bottomLine }) {
   const [elementShift, setElementShift] = useState(0)
   const theBox = useRef(null)
   useScrollPosition(
@@ -110,9 +110,7 @@ export default function Pug () {
         <Box style={{ zIndex: 50 }} direction="column" align="center">
           <Heading level={2} size="xlarge" margin="none">February, 22nd 2020</Heading>
           <Heading level={1} color="pale" size="xlarge" margin="none" textAlign="center">Birthday Hackathon</Heading>
-          <Paragraph >
-            <Text weight="bold" size="large"></Text>
-          </Paragraph>
+          {bottomLine}
         </Box>
       </Box>
     </Box>

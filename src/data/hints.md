@@ -11,11 +11,11 @@ We're quite sure that you've heard about git version control. Basically every pr
 
 ### Good friends' APIs and docs
 
-We all strive to behave like good friends at this hackathon. But some friends can be considered particularly good friends and we especially ask you to have a look at their APIs and offerings:
+We all strive to be **good friends** at this hackathon. But some friends can be considered *particularly* good friends and we especially ask you to have a look at their APIs and offerings:
 
 ### Twilio
 
-Twilio lets you build applications that communicate. voice, SMS, chat at your fingertips.
+Twilio lets you build applications that communicate. Voice, SMS, chat at your fingertips:
 
 - Twilio Quickstarts: https://www.twilio.com/docs/quickstart
 - Twilio API reference: https://www.twilio.com/docs/api
@@ -24,7 +24,7 @@ Twilio's Developer Advocate Stefan Judis will give a short **overview of their A
 
 ### Lisk
 
-Lisk is an SDK for blockchains, anchored on a public ledger that they're running. If you know how to write Javascript, you can build decentralized apps on their stack:
+Lisk is an SDK for blockchains, anchored on a public decentralized ledger that they're running. If you know how to write Javascript, you can build decentralized apps on their stack:
 
 - Getting Started: https://lisk.io/documentation/lisk-sdk/getting-started.html
 - Hello World: https://lisk.io/documentation/lisk-sdk/tutorials/hello-world.html

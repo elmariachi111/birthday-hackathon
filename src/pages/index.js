@@ -1,6 +1,6 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { Anchor, Box, Heading, Image, Paragraph, Text } from 'grommet'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Anchor, Button, Box, Heading, Image, Paragraph, Text } from 'grommet'
 // import { Coffee, Cafeteria } from 'grommet-icons'
 import { Helmet } from 'react-helmet'
 
@@ -108,13 +108,14 @@ const IndexPage = () => {
                   Afternoon Cake
                 </li>
                 <li>
-                  dinner with a twist
-                </li>
-                <li>
                   A choice of tasteless, sweet and higher volume (&gt; 6pm) beverages
                 </li>
               </ul>
             </Paragraph>
+            <Button as={Link} to="/rules#agenda" label="Checkout the rules here" primary alignSelf="center" style={{ padding: '1em' }}></Button>
+            <Heading margin={{ bottom: 'none' }} alignSelf="center">
+
+            </Heading>
           </Box>
         </Box>
         <Box basis="1/2" animation="slideLeft">

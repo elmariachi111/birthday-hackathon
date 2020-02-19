@@ -22,9 +22,9 @@ export default function WhatToBuild () {
       <Box direction="row-responsive" gap="medium">
         <Challenge title="Conversational interfaces">
           <em>"How do users interact with applications"</em>?
-              Use <Anchor href="https://www.twilio.com/">voice</Anchor>,
-              text, <Anchor href="https://developer.amazon.com/en-US/alexa">speech</Anchor>,
-          <Anchor href="https://matrix.org/">chat</Anchor> and <Anchor href="https://api.slack.com/">bots</Anchor> APIs
+              Use <Anchor href="https://www.twilio.com/">Twilio's voice or text APIs</Anchor>,
+          <Anchor href="https://developer.amazon.com/en-US/alexa">speech</Anchor>,
+          <Anchor href="https://matrix.org/">chat</Anchor> and <Anchor href="https://api.slack.com/">bot</Anchor> APIs
           and reinvent the way how users interact with your app
         </Challenge>
 
@@ -53,7 +53,7 @@ export default function WhatToBuild () {
         </Challenge>
 
         <Challenge title="A Lisk in Chains">
-            Let <Anchor>Lisk</Anchor> convince your that blockchains will change the world as we know it!
+            Let <Anchor href="https://lisk.io">Lisk</Anchor> convince your that blockchains will change the world as we know it!
             Play around with <Anchor href="https://lisk.io/documentation/lisk-sdk/">Lisk's SDK</Anchor> and get a feeling for the
             awesomeness of Javascript based <Anchor href="https://lisk.io/documentation/lisk-sdk/tutorials/hello-world.html">custom transactions</Anchor>{' '}
             based on ultimately secure <Anchor href="https://lisk.io/documentation/lisk-core/">distributed ledger technology</Anchor>.
