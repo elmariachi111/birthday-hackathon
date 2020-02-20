@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Image, Paragraph } from 'grommet'
+import { Box, Heading, Image, Paragraph, Anchor } from 'grommet'
 
 import audibene from '../../images/logos/audibene-logo.svg'
 import twilio from '../../images/logos/twilio.png'
@@ -8,10 +8,15 @@ import wcs from '../../images/logos/WCS.png'
 import codingberlin from '../../images/logos/coding-berlin.png'
 import lisk from '../../images/logos/lisk.svg'
 
-function ImgBox ({ image }) {
+function ImgBox ({ image, maxHeight = '120px', link = null }) {
   return (
     <Box basis="33%" pad="medium">
-      <Image fill fit="contain" src={image} style={{ maxHeight: '120px' }} />
+      {link
+        ? <Anchor href={link} target="_blank" >
+          <Image fill fit="contain" src={image} style={{ maxHeight }} />
+        </Anchor>
+        : <Image fill fit="contain" src={image} style={{ maxHeight }} />}
+
     </Box>
   )
 }
@@ -19,30 +24,27 @@ function ImgBox ({ image }) {
 export default function Partners (props) {
   return (
     <>
-      <Heading level={2} size="xlarge" margin={{ bottom: 'none' }}>
+      <Heading level={2} size="xlarge" margin={{ top: 'none' }}>
+        They make it possible:
+      </Heading>
+
+      <Heading level={2} size="xlarge" margin="none">
+                Best friends
+      </Heading>
+      <Box direction="row-responsive" wrap={true} width="xlarge" >
+        <ImgBox image={audibene} link="https://www.audibene.de/" />
+        <ImgBox image={turbinekreuzberg} link="https://www.turbinekreuzberg.com/" />
+        <ImgBox image={wcs} link="https://www.wildcodeschool.com/en-GB/campuses/berlin" />
+      </Box>
+
+      <Heading level={2} size="large" margin={{ bottom: 'none' }}>
                 Good friends
       </Heading>
-      <Heading level={3} size="large" margin={{ top: 'none' }}>
-                who make it possible
-      </Heading>
-
       <Box direction="row-responsive" wrap={true} width="xlarge" >
-        <ImgBox image={audibene} />
-        <ImgBox image={turbinekreuzberg} />
-        <ImgBox image={wcs} />
-        <ImgBox image={twilio} />
-        <ImgBox image={codingberlin} />
-        <ImgBox image={lisk} />
-      </Box>
-      <Box width="xlarge">
-        <Paragraph fill size="medium">
-          <b>Want to become a <em>good friend</em>, too?</b> <br/>
-            Birthday Hack is a purely non profit, open source, celebration-oriented
-            happening and we'd love to see you support us with it. :)
-            If you're interested, leave a mail in our post box: <a href="mailto:info@coding-earth.com?subject=Birthday Hackathon">info@coding-earth.com</a>
-        </Paragraph>
+        <ImgBox image={twilio} maxHeight="80px" link="https://www.twilio.com/" />
+        <ImgBox image={lisk} maxHeight="80px" link="https://lisk.io/" />
+        <ImgBox image={codingberlin} maxHeight="80px" link="https://coding.earth/" />
       </Box>
     </>
-
   )
 }

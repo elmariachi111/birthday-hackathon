@@ -12,6 +12,10 @@ No one gets far when building things alone, so we strongly encourage you to work
 
 During lunch time you'll find **sheets of paper** on the tables. Put your team's name on it and your own names next to it. Make sure we can read it at night. 
 
+#### Find a good hacking idea
+
+We've put some hacking ideas on the issues page of this website: https://github.com/elmariachi111/birthday-hackathon/issues feel free to add your idea there and directly approach people to build teams around the idea. 
+
 ### Demo your hack at 10pm
 
 Yep, that's mandatory. But don't be shy, this is your chance to put your efforts on display. **Entertain us, show what you've achieved, raise awareness of your idea.** We're not going to record these and you won't believe how proud you'll be when leaving the stage - even if your demo breaks ;) 
@@ -34,7 +38,7 @@ Of course we could ask you to take pictures of our good friends' rollup banners,
 
 *Why... in the world... would you do that?!* Simple answer: **Wild Code School is a no-shoes area**. So, make double sure to **wear socks** that can be shown on the internet ;)
 
-Bonus: you can extend this idea to a **team challenge** and build a smart **social media wall** that puts all the foot pictures on display. Footage, so to say.
+Bonus: you can extend this idea to a **team challenge** and build a smart **social media wall** that puts all the foot pictures on display. Footage, so to say. There's even a hack idea open for it: https://github.com/elmariachi111/birthday-hackathon/issues/9
 
 
 

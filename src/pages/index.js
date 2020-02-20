@@ -145,11 +145,14 @@ const IndexPage = () => {
               9am - 10pm
             </Paragraph>
 
-            <Paragraph size="medium" fill>
-              Wild Code School Berlin,
+            <Paragraph size="medium" fill textAlign="center">
+              Wild Code School Berlin <br />
               Oudenarder Str. 16
 
               13347 Berlin
+            </Paragraph>
+            <Paragraph>
+              <Anchor href="https://w3w.co/knee.tropic.creamed" target="_blank">w3w.co/knee.tropic.creamed</Anchor>
             </Paragraph>
           </Box>
         </Box>

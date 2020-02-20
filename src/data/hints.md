@@ -9,6 +9,7 @@ It might turn out to be helpful if you're following some best practices, hence w
 
 We're quite sure that you've heard about git version control. Basically every project is based on it and it lets you collaborate on code easily. That's why you should setup a git repo for your team as soon as possible and make sure to onboard newbies if necessary.
 
+
 ### Good friends' APIs and docs
 
 We all strive to be **good friends** at this hackathon. But some friends can be considered *particularly* good friends and we especially ask you to have a look at their APIs and offerings:

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Anchor, Box, Heading, Image, Paragraph, Text } from 'grommet'
+import { Link } from 'gatsby'
 
 function Challenge ({ title, children }) {
   return <Box basis="1/2" background="pale" pad="small" round="xsmall">
@@ -15,8 +16,12 @@ function Challenge ({ title, children }) {
 export default function WhatToBuild () {
   return (
     <Box alignSelf="center" width={{ max: 'xlarge' }}>
-      <Heading level={2} size="xlarge" alignSelf="center">
+      <Heading level={2} size="xlarge" alignSelf="center" margin={{ bottom: 'none' }}>
             What to build
+      </Heading>
+      <Heading level={3} size="large" alignSelf="center" margin={{ top: 'none' }}>
+        <Anchor as={Link} to="/rules">&raquo; More infos on our rules page</Anchor>
+
       </Heading>
 
       <Box direction="row-responsive" gap="medium">

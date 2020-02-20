@@ -16,7 +16,7 @@ const MdxComponents = {
   h2: props => <Heading level={2} size="5em" margin={{ bottom: 'small' }} {...props}/>,
   h3: props => <Heading level={3} size="4em" margin={{ bottom: 'small' }} {...props}/>,
   h4: props => <Heading level={4} size="3em" margin={{ bottom: 'small' }} {...props}/>,
-
+  a: props => <Anchor {...props} />,
   p: props => <Paragraph fill size="large" {...props} />
 }
 
