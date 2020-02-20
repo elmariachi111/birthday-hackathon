@@ -1,97 +1,41 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# The Birthday-Hack | 02/22/2020
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+https://www.birthday-hackathon.de/
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Rules, Perks, Good to know
 
-## 🚀 Quick start
+Birthday Hackathon is supposed to be a **fun event**, no pressure, no judging, no challenge goals. The only things we're asking for: you should hack in teams and you should be able to do a **2 minute demo** of what you've built during the day at 10pm.
 
-1.  **Create a Gatsby site.**
+### Team Building
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+No one gets far when building things alone, so we strongly encourage you to work in **teams of at least 2 and at most 4 people**. Use the opportunity to find new friends and learn from them! We've reserved a ca. 45 minutes slot for **team building** in the morning.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+During lunch time you'll find **sheets of paper** on the tables. Put your team's name on it and your own names next to it. Make sure we can read it at night. 
 
-1.  **Start developing.**
+#### Find a good hacking idea
 
-    Navigate into your new site’s directory and start it up.
+We've put some hacking ideas on the [issues page](https://github.com/elmariachi111/birthday-hackathon/issues) of this repo. Feel free to add your idea there and directly approach people to build teams around the idea. 
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+### Demo your hack at 10pm
 
-1.  **Open the source code and start editing!**
+Yep, that's mandatory. But don't be shy, this is your chance to put your efforts on display. **Entertain us, show what you've achieved, raise awareness of your idea.** We're not going to record these and you won't believe how proud you'll be when leaving the stage - even if your demo breaks ;) 
 
-    Your site is now running at `http://localhost:8000`!
+### Earn Help-Points to get an award!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+We cannot mention it frequently enough but this hackathon is **for the hackers** and not for the winners. Which doesn't mean that there are no prizes we're giving away! Instead of judging your results, we came up with a better idea:
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Each participant receives **5 small sticker dots** upon entering the venue that we refer to as **help-points**. Every time you're stuck on some issue, we encourage you to **seek help with your fellow hackers**. Every time someone helps you out, stick one (or more) of these dots on her computer's bottom. 
 
-## 🧐 What's inside?
+After the demos we're giving away awards for the people who collected most dots! So, if you want to go home with a nice "birthday" gift, make sure to **support as many people as possible**.
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+### Pear Programming
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+The best way to learn something new and become a productive team, is to watch code with four (or more) eyes. On Saturday we're reinterpreting that as **"pear" programming** and will offer an appropriate fruit selection for people doing so. Besides the vitamine intake it's a great opportunity to share some help-points, too ;)
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+### #Fussbook and footwear rules
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Of course we could ask you to take pictures of our good friends' rollup banners, the nice Wild Code School coworking space, the cake (thank you [Lisk](https://lisk.io) for sponsoring!) or of your team members. Instead we want to resurrect an ancient idea of ours: lets take pictures that **contain at least one foot** - your foot, our feet, your team members' feet - and share them on social media channels using the hashtag **#fussbook** (you guessed right: "fuß" or "fuss" means "foot" in German). You even can't break GDPR rules doing so :) 
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+*Why... in the world... would you do that?!* Simple answer: **Wild Code School is a no-shoes area**. So, make double sure to **wear socks** that can be shown on the internet ;)
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Bonus: you can extend this idea to a **team challenge** and build a smart **social media wall** that puts all the foot pictures on display. Footage, so to say. There's even a hack idea open for it: https://github.com/elmariachi111/birthday-hackathon/issues/9
