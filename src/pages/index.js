@@ -134,7 +134,7 @@ const IndexPage = () => {
 
         <Box basis="1/2" style={{ background: `url(${imgWcs})`, backgroundSize: 'cover' }}>
 
-          <Box align="center" pad="large" background="pale" style={{ opacity: 0.93, width: '75%', margin: 'auto auto' }}>
+          <Box align="center" pad="medium" background="pale" style={{ opacity: 0.93, width: '75%', margin: 'auto auto' }}>
             <Heading level={2} size="xlarge" >
               Where and When
             </Heading>

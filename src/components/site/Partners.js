@@ -40,8 +40,8 @@ export default function Partners (props) {
       <Heading level={2} size="large" margin={{ bottom: 'none' }}>
                 Good friends
       </Heading>
-      <Box direction="row-responsive" wrap={true} width="xlarge" >
-        <ImgBox image={twilio} maxHeight="80px" link="https://www.twilio.com/" />
+      <Box direction="row-responsive" wrap={true} width="xlarge" justify="around" >
+        <ImgBox image={twilio} maxHeight="60px" link="https://www.twilio.com/" />
         <ImgBox image={lisk} maxHeight="80px" link="https://lisk.io/" />
         <ImgBox image={codingberlin} maxHeight="80px" link="https://coding.earth/" />
       </Box>

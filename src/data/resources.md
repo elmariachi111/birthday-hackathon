@@ -9,9 +9,9 @@ There are amazing hackathon starters that you can clone and build upon:
 - https://github.com/sahat/hackathon-starter/
 - https://github.com/futurice/op-hackathon-templates
 
-The "awesome" list contains a gazillion pointers to anything coding related: https://github.com/sindresorhus/awesome
+[The "awesome" list](https://github.com/sindresorhus/awesome) contains a gazillion pointers to anything coding related
 
-If you'd like to hack on data, awesome datasets might have you covered: https://github.com/awesomedata/awesome-public-datasets, [Kaggle](https://www.kaggle.com/) of course is a one-stop-shop for ideas and data sources.
+If you'd like to hack on data, [awesome datasets](https://github.com/awesomedata/awesome-public-datasets) might have you covered. [Kaggle](https://www.kaggle.com/) of course is a one-stop-shop for ideas and data sources.
 
 To start with a **frontend stack**, make sure to checkout
 
@@ -25,6 +25,7 @@ To start with a **frontend stack**, make sure to checkout
 - Twilio: https://www.twilio.com/
 - Alexa: https://developer.amazon.com/en-US/alexa
 - Slack: https://api.slack.com/
+- Matrix: https://matrix.org/docs/develop
 
 #### Frontends to bow down for
 - Effects: https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59
@@ -55,12 +56,8 @@ To start with a **frontend stack**, make sure to checkout
 
 - Mapbox, ftw: https://docs.mapbox.com/mapbox-gl-js/api/
 - FOAM (decentralized, tokenized mapping): https://foam.space/map
-- W3W (never ask for an addresse again) https://what3words.com/limo.reserve.skews
+- W3W (never ask for an address again) https://what3words.com/limo.reserve.skews
 - Esri (ultimate mapping): https://www.esri.com/en-us/arcgis/products/mapping
-
-### Last wise words 
-
-if you want to go fast, use what you already know. If you start using something that's completely new to you, you'll lose quite some time on learning it. Which is good! That's actually why you're here - just make sure to go for the simplest goals you can think of.  
 
 ### contribute here :)
 

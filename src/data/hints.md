@@ -3,42 +3,28 @@ title: "hints"
 ---
 ## Hints for hackers.
 
-It might turn out to be helpful if you're following some best practices, hence we assembled some for you:
+It might turn out to be helpful to following some best hacker practices, so we assembled some for you:
 
-### Use the git.
+#### Use the git.
 
-We're quite sure that you've heard about git version control. Basically every project is based on it and it lets you collaborate on code easily. That's why you should setup a git repo for your team as soon as possible and make sure to onboard newbies if necessary.
+We're sure that you've heard about git version control. Basically every project is using it and it lets you collaborate on code easily. That's why you should setup a git repo for your team as soon as possible and make sure to onboard newbies if necessary. Special hint for a hackathon: Do commit early, often and merge to the trunk as soon as possible. Don't let code rot in Pull Requests or "feature" branches. Trust your teammates and combine your forces when facing conflicts. Important reminder: **never ever** check in any credentials into a git repo, not even at a hackathon! Use .env files (e.g. dotenv on JS) and deployment secrets to secure your tokens instead.
 
+#### Docker is great. Think thoroughly if you need it.
 
-### Good friends' APIs and docs
+Docker helps keeping your dev machine clean, is a powerful deployment tool and it gets you started with new environments in seconds. Decide early if your team and project really needs that additional layer of complexity and rigurously enable all your team members to use them. It will earn you help-points for sure!
 
-We all strive to be **good friends** at this hackathon. But some friends can be considered *particularly* good friends and we especially ask you to have a look at their APIs and offerings:
+#### Ensure that everyone is on the same boat
 
-### Twilio
+Understand what you try to achieve. Make sure everyone tells the same story. Then try to split tasks among your team members according to your skills. 
 
-Twilio lets you build applications that communicate. Voice, SMS, chat at your fingertips:
+#### Go minimal
 
-- Twilio Quickstarts: https://www.twilio.com/docs/quickstart
-- Twilio API reference: https://www.twilio.com/docs/api
+Boil down your idea to an absolute minimum first and make it happen. No need to mock APIs, nobody cares if you're not abstracting things, go concrete and verbose, it's all about the running demo.   
 
-Twilio's Developer Advocate Stefan Judis will give a short **overview of their APIs at 12pm** in the back room.
+#### Build on the shoulders of others
 
-### Lisk
+Of course you won't install a strpad library from npm if your language core supports it. But try to keep your head free by trusting powerful micro frameworks, simple databases and plain Javascript services and use all the help you can find on the web.  
 
-Lisk is an SDK for blockchains, anchored on a public decentralized ledger that they're running. If you know how to write Javascript, you can build decentralized apps on their stack:
+### Learning something new vs. use what you know
 
-- Getting Started: https://lisk.io/documentation/lisk-sdk/getting-started.html
-- Hello World: https://lisk.io/documentation/lisk-sdk/tutorials/hello-world.html
-- Run your own node: https://lisk.io/documentation/lisk-core/index.html 
-
-Lisk's advocates will also be on site that day and do a workshop and SDK **intro at 12:30pm**. 
-
-### Mapbox
-
-Mapbox lets you build beautiful maps, allowing you to style any aspect of them. If you've ever wanted an alternative for Google Maps, this might be the service you've been looking for:
-
-- Mapbox GL JS: https://docs.mapbox.com/mapbox-gl-js/api/
-- Mapbox Studio: https://docs.mapbox.com/studio-manual/overview/
-- Vector Tiles: https://docs.mapbox.com/vector-tiles/reference/
-
-Mapbox cannot dispatch someone to our hackathon but they come with a generous free tier and support us with good vibes.
+If you want to go fast, use what you already know. If you start using something that's completely new to you, you'll lose quite some time on learning it - which is great! That's actually why we're here - just be aware that you cannot eat the cake and have it, too.  
