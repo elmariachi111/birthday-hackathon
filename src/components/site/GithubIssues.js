@@ -15,21 +15,7 @@ export default function GithubIssues () {
 
   return <Box>
     <ul style={{ listStyleType: 'none' }}>
-      {issues.map(i => (
-        <li key={i.node_id} style={{ marginBottom: '1em' }}>
-          <Anchor href={i.html_url} target="_blank" size="large">
-            {i.title}
-          </Anchor><br />
-          {i.labels.map(l => (
-            <Text
-              style={{ color: `#${l.color}` }}
-              margin={{ right: 'small' }}
-              size="medium"
-              key={`${i.node_id}-${l.id}`}>{l.name}
-            </Text>
-          ))}
-        </li>
-      ))}
+
     </ul>
   </Box>
 }
