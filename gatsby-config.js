@@ -59,7 +59,22 @@ module.exports = {
         minify: true,
         pure: true
       }
+    },
+    {
+      resolve: 'gatsby-source-cloudinary',
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: 'image',
+        tags: true,
+        maxResults: 100,
+        // type: `upload`,
+        prefix: 'birthday-hackathon/',
+        transformations: ['txb_preview', 'maxeco']
+      }
     }
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

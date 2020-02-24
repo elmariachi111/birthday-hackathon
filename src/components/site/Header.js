@@ -30,10 +30,12 @@ export default function TheHeader ({ props }) {
     </Box>
     <Box direction="row" gap="large" >
 
-      <Anchor as={Link} to="/#expect">expect</Anchor>
+      {/* <Anchor as={Link} to="/#expect">expect</Anchor>
       <Anchor as={Link} to="/#build">build</Anchor>
       <Anchor as={Link} to="/#rsvp">count me in</Anchor>
-      <Anchor as={Link} to="/rules#agenda" style={{ fontSize: '1.6em' }}>The Rules</Anchor>
+      */}
+      <Anchor as={Link} to="/">Recap</Anchor>
+      <Anchor as={Link} to="/rules#agenda">The Rules</Anchor>
     </Box>
   </Header>
 }
