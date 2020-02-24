@@ -25,7 +25,7 @@ export default function Partners (props) {
   return (
     <>
       <Heading level={2} size="xlarge" margin={{ top: 'none' }}>
-        They make it possible:
+        They made it possible:
       </Heading>
 
       <Heading level={2} size="xlarge" margin="none">

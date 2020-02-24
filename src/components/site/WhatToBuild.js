@@ -17,7 +17,7 @@ export default function WhatToBuild () {
   return (
     <Box alignSelf="center" width={{ max: 'xlarge' }}>
       <Heading level={2} size="xlarge" alignSelf="center" margin={{ bottom: 'none' }}>
-            What to build
+            What we built
       </Heading>
       <Heading level={3} size="large" alignSelf="center" margin={{ top: 'none' }}>
         <Anchor as={Link} to="/rules">&raquo; More infos on our rules page</Anchor>

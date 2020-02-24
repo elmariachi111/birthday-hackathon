@@ -180,11 +180,6 @@ const IndexPage = () => {
       </Box>
     </Box>
 
-    <Box background="pale" align="center" pad="large" id="rsvp">
-      {/* <CountMeIn /> */}
-      {<Tickets />}
-    </Box>
-
   </Layout >
 }
 
