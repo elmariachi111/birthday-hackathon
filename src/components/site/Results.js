@@ -41,14 +41,14 @@ export default function Results () {
       {projects.map(({ frontmatter, body, id }) => (
         <Box key={id} fill pad={{ horizontal: 'medium' }} width={{ max: 'xlarge' }}>
           <Heading level={2} size="xlarge" margin={{ bottom: 'small' }}>{frontmatter.title}</Heading>
-          <Anchor to={frontmatter.repo}>{frontmatter.repo}</Anchor>
+          <Anchor href={frontmatter.repo}>{frontmatter.repo}</Anchor>
           <Box direction="row-responsive" justify="around" wrap>
             {frontmatter.team.map((member, idx) => (<Box key={`member-${idx}`} align="center" margin={{ vertical: 'medium' }}>
               <Text size="large" weight="bold">{member.name}</Text>
               <Box direction="row">
-                {member.twitter && <Anchor to={`//twitter.com/${member.twitter}`} margin="small" size="medium" ><Twitter color="accent-4" title={member.twitter} /></Anchor>}
-                {member.github && <Anchor to={`//github.com/${member.github}`} margin="small" size="medium" ><Github color="accent-4" title={member.github}/></Anchor>}
-                {member.linkedin && <Anchor to={member.linkedin} size="medium" margin="small"><Linkedin color="accent-4" title={member.linkedin}/> </Anchor>}
+                {member.twitter && <Anchor href={`//twitter.com/${member.twitter}`} margin="small" size="medium" ><Twitter color="accent-4" title={member.twitter} /></Anchor>}
+                {member.github && <Anchor href={`//github.com/${member.github}`} margin="small" size="medium" ><Github color="accent-4" title={member.github}/></Anchor>}
+                {member.linkedin && <Anchor href={member.linkedin} size="medium" margin="small"><Linkedin color="accent-4" title={member.linkedin}/> </Anchor>}
               </Box>
             </Box>))}
           </Box>

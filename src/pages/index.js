@@ -100,10 +100,13 @@ const IndexPage = () => {
 
     <Box background="black" align="center" >
 
-      <Heading level={2} size="xlarge">
+      <Heading level={2} size="xlarge" margin={{ bottom: 'none' }}>
             Results
       </Heading>
+      <Text alignSelf="center" size="small">add your project by <Anchor href="https://github.com/elmariachi111/birthday-hackathon/tree/master/src/data/teams">forking &amp; adding another team.md file here</Anchor></Text>
+
       <Box direction="row-responsive" wrap={true} width="xlarge" >
+
         <Results></Results>
       </Box>
 
