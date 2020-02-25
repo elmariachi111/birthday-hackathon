@@ -13,6 +13,7 @@ import imgWcs from '../images/artwork/location_wcs.jpg'
 import Pug from '../components/site/Pug'
 import Partners from '../components/site/Partners'
 import Impressions from '../components/site/Impressions'
+import Results from '../components/site/Results'
 
 import { DefaultPlayer as Video } from 'react-html5video'
 import 'react-html5video/dist/styles.css'
@@ -95,20 +96,32 @@ const IndexPage = () => {
           }
         </Box>
       </Box>
-
-      <Box>
-        <Impressions
-          button={Button}
-          buttonProps={{
-            fill: false,
-            margin: 'large',
-            primary: true,
-            label: 'show more'
-          }}
-          images={images}
-        />
-      </Box>
     </Box>
+
+    <Box background="black" align="center" >
+
+      <Heading level={2} size="xlarge">
+            Results
+      </Heading>
+      <Box direction="row-responsive" wrap={true} width="xlarge" >
+        <Results></Results>
+      </Box>
+
+    </Box>
+
+    <Box background="pale" pad="large">
+      <Impressions
+        button={Button}
+        buttonProps={{
+          fill: false,
+          margin: 'large',
+          primary: true,
+          label: 'show more'
+        }}
+        images={images}
+      />
+    </Box>
+
     <Box background="white" align="center" pad="large">
       <Partners />
     </Box>
